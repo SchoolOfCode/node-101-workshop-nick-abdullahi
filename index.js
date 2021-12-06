@@ -25,18 +25,18 @@ function describeItem(item) {
 
   if (item.count === 1){
 
-    console.log(`I have a ${item.name} Here's what I like about it: ${item.whatILike}`)
+    console.log(`I have a ${item.name}. Here's what I like about it: ${item.whatILike}`);
     
   } else {
 
-    console.log(`I have ${item.count} ${item.name} Here's what I like about them: ${item.whatILike}`)
+    console.log(`I have ${item.count} ${item.name} Here's what I like about them: ${item.whatILike}`);
 
   }
 
 
 }
 
-describeItem(2)
+describeItem(myCollection[0])
 
 
 
@@ -44,21 +44,21 @@ describeItem(2)
 👉 
 
 
-/* 👉 2d. Now make a function called `describeCollection` that takes in an array as a parameter. The function should loop through the array, and for each item, it should call the `describeItem` function so it displays a message according to how many you have in your collection.
+/* 👉 2d. 
 
-Call your function below where you've defined it, handing in the `myCollection` array.
-
-Run the file again to see the output and check that it outputs the correct message for each item in your collection (i.e. each object in your `myCollection` array).*/
+- Make function called `describeCollection` takes (array) as a parameter. 
+- The function should loop through array,  
+- For each item,  should call the `describeItem` function 
+- So it displays a message according to how many you have in your collection.
+*/
 
 function describeCollection(arr){
-
-  // for (let i = 0; i < item.count; i++){
-
 
   arr.forEach(describeItem);
 
 }
 
+// - Call your function below where you've defined it, handing in the `myCollection` array.
   describeCollection(myCollection);
 
 
