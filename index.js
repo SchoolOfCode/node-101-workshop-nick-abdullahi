@@ -1,3 +1,9 @@
+/* 3c. Now import `myCollection` at the top of `index.js`. You should be able to then call your function just as you did in part 1, but this time using `myCollection` imported from its separate file.*/
+
+import myCollection from ""
+
+
+
 let myCollection = [
     {
       name: "School of Code mug",
