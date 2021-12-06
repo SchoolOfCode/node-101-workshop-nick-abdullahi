@@ -1,8 +1,9 @@
 import myCollection from "./collection.js";
+import chalk from 'chalk';
+
 
 
 // 2b create a variable `myCollection` as an array of objects:
-
 
 
 /* 2c. Create a function called `describeItem`, which should take in an item as a parameter (the argument handed to this function would be an item from our collection). The function should `console.log` a message according to how many of the item you have. */
@@ -11,11 +12,11 @@ function describeItem(item) {
 
   if (item.count === 1){
 
-    console.log(`I have a ${item.name}. Here's what I like about it: ${item.whatILike}`);
+    console.log(`I have a ${chalk.yellow(item.count)}. ${chalk.cyan(item.name)}. Here's what I like about it: ${chalk.green(item.whatILike)}`);
     
   } else {
 
-    console.log(`I have ${item.count} ${item.name} Here's what I like about them: ${item.whatILike}`);
+    console.log(`I have ${chalk.yellow(item.count)} ${chalk.cyan(item.name)} Here's what I like about them: ${chalk.green(item.whatILike)}`);
 
   }
 
